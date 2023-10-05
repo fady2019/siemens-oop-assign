@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1696468415 source:d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\src\frame.cpp
+	<string>
+	"Frame.h"
+
+1696468424 d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\include\frame.h
+	<string>
+
+1696470745 source:d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\src\ecpri.cpp
+	<string>
+	"ECPRI.h"
+	"Frame.h"
+	"FrameStringifyVisitor.h"
+
+1696469657 d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\include\ecpri.h
+	<string>
+	"Frame.h"
+
+1696468459 source:d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\src\ethernet.cpp
+	<string>
+	"Frame.h"
+	"Ethernet.h"
+	"FrameStringifyVisitor.h"
+
+1696468428 d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\include\ethernet.h
+	<string>
+	"Frame.h"
+
+1696470836 source:d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\main.cpp
+	<iostream>
+	<string>
+	"Frame.h"
+	"ECPRI.h"
+	"Ethernet.h"
+	"FramePlainTextVisitor.h"
+
+1696468432 d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\include\framestringifyvisitor.h
+	<string>
+	"Ethernet.h"
+	"ECPRI.h"
+
+1696468422 source:d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\src\framestringifyvisitor.cpp
+	"FrameStringifyVisitor.h"
+
+1696470793 source:d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\src\frameplaintextvisitor.cpp
+	<sstream>
+	"FramePlainTextVisitor.h"
+
+1696468272 d:\career\internships\siemens\lectures\00 lec1\oop\content\assignment\codeblocks_sol\opp_assign\include\frameplaintextvisitor.h
+	<string>
+	"FrameStringifyVisitor.h"
+
