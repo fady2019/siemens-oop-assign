@@ -22,6 +22,11 @@ void ECPRI::parse()
     });
 }
 
+ECPRI::ECPRI(ECPRI &ecpri) : Frame(ecpri.packet)
+{
+    this->parse();
+}
+
 string ECPRI::stringify(FrameStringifyVisitor *frameStringifyVisitor)
 {
     return frameStringifyVisitor->stringify(*this);

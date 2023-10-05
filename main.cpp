@@ -10,12 +10,44 @@ using namespace std;
 
 int main()
 {
-    string packet = "FB555555555555D50000000000C1ECCD655507D9AEFE1002001480680080900000000101D10000100000FFFE7E0400000000000000000000000000000000000000000000B329AA60";
+    freopen ("input_packets", "r", stdin);
+    freopen ("output_packets", "w", stdout);
 
-    ECPRI *frame = new ECPRI(packet);
+    string packet;
+    int i = 0;
 
-    frame->parse();
-    cout << frame->stringify(new FramePlainTextVisitor()) << endl;
+    while(cin >> packet)
+    {
+        string type = packet.substr(40, 4);
+
+        Frame *frame;
+
+        if(type == "AEFE")
+        {
+            frame = new ECPRI(packet);
+        }
+        else
+        {
+            frame = new Ethernet(packet);
+        }
+
+        frame->parse();
+
+        FrameStringifyVisitor *framePlainTextVisitor = new FramePlainTextVisitor();
+
+        cout << "Packet #" << i++ << ":\n" << frame->stringify(framePlainTextVisitor) << endl << endl;
+
+        for(int j=0; j<200; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl << endl;
+
+
+        delete framePlainTextVisitor;
+        delete frame;
+    }
 
     return 0;
 }

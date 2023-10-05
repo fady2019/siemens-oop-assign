@@ -24,6 +24,7 @@ private:
 
 public:
     ECPRI(string packet);
+    ECPRI(ECPRI &ecpri);
 
     void parse();
     string stringify(FrameStringifyVisitor *frameStringifyVisitor);

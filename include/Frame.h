@@ -32,7 +32,7 @@ public:
     string getPayload();
     string getFcs();
 
-    ~Frame();
+    virtual ~Frame();
 };
 
 #endif // FRAME_H
